@@ -69,7 +69,7 @@ export default {
   mounted() {
     axios
       .get(
-        `${config.url}/products/service/${this.$route.params.service}`
+        `${config.url}/products?serviceType=${this.$route.params.service}`
       )
       .then((response) => {
         // this.product = response.data;
